@@ -19,6 +19,6 @@ use post rest request at below path
         "https://www.google.com/",
         "https://www.yahoo.com/"
     ],
-    "breakPoint": 10,
+    "breakPoint": 500,
     "searchStr": "search"
 	}
