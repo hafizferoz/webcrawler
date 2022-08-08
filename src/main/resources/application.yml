@@ -5,5 +5,5 @@ default-pattern: "\\b((https|http?|ftp|file)://[-a-zA-Z\\d+&@#/%?=~_|!:,.;]*[-a-
 
 server:
   servlet:
-    context-path: /webtools
+    context-path: /webcrawler
   port: 8080

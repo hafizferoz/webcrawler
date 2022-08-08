@@ -22,7 +22,7 @@ import lombok.extern.slf4j.Slf4j;
  *
  */
 @Slf4j
-@RequestMapping("/webcrawler")
+@RequestMapping("/rest")
 @RestController
 public class WebCrawlerController {
 
@@ -34,7 +34,7 @@ public class WebCrawlerController {
         this.webCrawlerService = webCrawlerService;
     }
 
-    @PostMapping("/scan")
+    @PostMapping("/search")
     public ResponseEntity<WebCrawlResponse> scan(@RequestBody WebCrawlRequest scanRequest) throws IOException {
         log.info("Searching for: {}", scanRequest.getUrls());
         List<String> list = webCrawlerService.scan(scanRequest.getUrls(), scanRequest.getSearchStr(), scanRequest.getBreakPoint());
